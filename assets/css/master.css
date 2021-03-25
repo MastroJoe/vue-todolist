@@ -18,11 +18,30 @@
   max-width: 800px;
   padding: 20px;
   background-color: red;
-  border: #000000;
+  border: 1px solid #000000;
   border-radius: 9px;
   box-shadow: 5px 5px 3px #888888;
 }
 
 h1 {
   text-align: center;
+}
+
+.todos {
+  list-style: none;
+}
+
+.todos li {
+  padding: 20px 20px;
+}
+
+.todos li .control {
+  float: right;
+  padding: 0 8px;
+}
+
+.todos li:after {
+  content:'';
+  display: table;
+  clear: both;
 }

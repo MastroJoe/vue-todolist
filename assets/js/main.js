@@ -7,6 +7,23 @@ var app = new Vue(
   {
     el: '#root',
     data: {
+      todos: [
+        {
+          title: 'Allenamento',
+        },
+        {
+          title: 'Spesa',
+        },
+        {
+          title: 'Studio',
+        },
+        {
+          title: 'Passeggiare con cane',
+        },
+        {
+          title: 'Pulire casa',
+        },
+      ]
 
     },
     methods: {
