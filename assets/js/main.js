@@ -51,7 +51,10 @@ var app = new Vue(
         this.todos.push(obj);
         this.textInput = '';
       },
-
+      // creo funzione per cambiare status del todo (al click del check)
+      check: function(index) {
+        this.todos[index].status = 'done';
+      }
     }
   }
 );

@@ -15,14 +15,19 @@
     <div class="container">
       <h1>To-Do List</h1>
       <ul class="todos">
-        <li v-for="todo in computedTodos">
+        <li v-for="(todo, i) in computedTodos">
           <span
             class="title"
             :class="(todo.status == 'done') ? 'completato' : ''">
             {{ todo.title }}
           </span>
           <span v-if="todo.status != 'done'" class="control edit"><i class="far fa-edit"></i></span>
-          <span v-if="todo.status != 'done'" class="control check"><i class="fas fa-check"></i></span>
+          <span
+            v-if="todo.status != 'done'"
+            class="control check"
+            @click="check(i)">
+              <i class="fas fa-check"></i>
+          </span>
         </li>
       </ul>
 
