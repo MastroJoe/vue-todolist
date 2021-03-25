@@ -32,7 +32,7 @@ h1 {
 }
 
 .todos li {
-  padding: 20px 20px;
+  padding: 10px 40px;
 }
 
 .todos li .control {
@@ -44,4 +44,9 @@ h1 {
   content:'';
   display: table;
   clear: both;
+}
+
+.container input {
+  width: 100%;
+  border-radius: 5px;
 }
