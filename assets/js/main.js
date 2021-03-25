@@ -33,6 +33,15 @@ var app = new Vue(
       // stringa vuota dell'input
       textInput: '',
     },
+    computed: {
+      // creo funzione per riordinare le todo e metter in fondo quelle completate
+      computedTodos: function(){
+        console.log(this.todos);
+        let doneTodo = this.todos.filter((todo) => todo.status == 'done');
+        let todoTodo = this.todos.filter((todo) => todo.status == 'todo');
+        return [...todoTodo, ...doneTodo];
+      }
+    },
     methods: {
       // creo funzione per creare e aggiungere ToDo all'array todos
       add: function(){
