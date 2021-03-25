@@ -11,18 +11,23 @@ var app = new Vue(
       todos: [
         {
           title: 'Allenamento',
+          status: `done`,
         },
         {
           title: 'Spesa',
+          status: `todo`,
         },
         {
           title: 'Studio',
+          status: `todo`,
         },
         {
           title: 'Passeggiare con cane',
+          status: `todo`,
         },
         {
           title: 'Pulire casa',
+          status: `todo`,
         },
       ],
       // stringa vuota dell'input
@@ -37,7 +42,7 @@ var app = new Vue(
         this.todos.push(obj);
         this.textInput = '';
       },
-      
+
     }
   }
 );
